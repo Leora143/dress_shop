@@ -1,174 +1,150 @@
 .home {
-background-color: #391904;
-min-height: 100vh;
+    background-color: #391904;
+    min-height: 100vh;
 }
 
-
-.product-grid,
-.cart-grid {
-display: grid;
-grid-template-columns: repeat(
-auto-fit,
-minmax(250px, 1fr)
-);
-gap: 20px;
-padding: 20px;
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
+.admin-product {
+  background: white;
 
+  border-radius: 15px;
+
+  padding: 20px;
+
+  text-align: center;
+
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
 
 .admin-form {
-width: 90%;
-max-width: 500px;
-margin: 30px auto;
-padding: 30px;
-background: white;
-border-radius: 15px;
-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width:500px;
+  margin: 30px auto;
+  padding: 30px;
+
+  background: white;
+
+  border-radius: 15px;
+
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
 }
 
 .admin-form form {
-display: flex;
-flex-direction: column;
-gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .admin-form input {
-padding: 12px;
-border: 1px solid #ddd;
-border-radius: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
 }
 
 .admin-form button {
-padding: 12px;
-border: none;
-border-radius: 8px;
-background: #004d26;
-color: white;
-cursor: pointer;
-}
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
 
-.admin-product,
-.cart-card {
-background: white;
-padding: 20px;
-text-align: center;
-border-radius: 15px;
-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
+  background: #004d26;
+  color: white;
 
-.admin-product img,
-.cart-card img {
-width: 100%;
-height: auto;
-object-fit: cover;
-border-radius: 10px;
+  cursor: pointer;
 }
+.admin-product img {
+  width: 100%;
 
+  height: auto;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+}
 .admin-buttons {
-display: flex;
-justify-content: center;
-gap: 10px;
-margin-top: 15px;
-}
+  display: flex;
 
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 15px;
+}
 .admin-buttons button {
-padding: 10px 15px;
-border: none;
-border-radius: 8px;
-cursor: pointer;
+  padding: 10px 15px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  cursor: pointer;
 }
 
-
-.checkout-container {
-display: flex;
-justify-content: center;
-gap: 30px;
-padding: 30px;
-flex-wrap: wrap;
-}
-
-.checkout-form,
-.order-summary {
-width: 100%;
-max-width: 400px;
-background: white;
-padding: 25px;
-border-radius: 15px;
-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.checkout-form form {
-display: flex;
-flex-direction: column;
-gap: 15px;
-}
-
-.checkout-form input {
-padding: 12px;
-border: 1px solid #ddd;
-border-radius: 8px;
-}
-
-.checkout-form button {
-padding: 12px;
-border: none;
-border-radius: 8px;
-cursor: pointer;
-}
-
-.summary-item {
-display: flex;
-gap: 10px;
-margin-bottom: 15px;
-}
-
-.summary-item img {
-width: 70px;
-height: 70px;
-object-fit: cover;
-border-radius: 8px;
-}
-
-
-@media (max-width: 768px) {
-.checkout-container {
-flex-direction: column;
-align-items: center;
-padding: 15px;
-}
-
-.checkout-form,
-.order-summary {
-width: 100%;
-max-width: 100%;
-}
-
-.admin-form {
-width: 95%;
-padding: 20px;
-}
-
-.admin-buttons {
-flex-direction: column;
-}
-
-.admin-buttons button {
-width: 100%;
-}
-
-.summary-item {
-flex-direction: column;
-align-items: center;
-text-align: center;
-}
-
-.summary-item img {
-width: 120px;
-height: auto;
-}
-
-.product-grid,
 .cart-grid {
-grid-template-columns: 1fr;
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit,
+      minmax(250px, 1fr));
+
+  gap: 20px;
 }
+
+.cart-card {
+  background: white;
+
+  border-radius: 15px;
+
+  padding: 20px;
+
+  text-align: center;
+
+  box-shadow:
+    0 2px 10px rgba(0,0,0,0.1);
+}
+.checkout-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+.checkout-form,
+.order-summary {
+  width: 400px;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.checkout-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.checkout-form input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.checkout-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.summary-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.summary-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
 }
