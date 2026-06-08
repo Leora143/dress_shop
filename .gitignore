@@ -1,0 +1,8 @@
+node_modules
+dist
+
+dressfront/.env
+dressback/.env
+
+dressfront/node_modules
+dressback/node_modules
