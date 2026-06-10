@@ -1,5 +1,5 @@
 const express = require("express");
-console.log("AUTH ROUTES LOADED");
+// console.log("AUTH ROUTES LOADED");
 
 const {
   register,

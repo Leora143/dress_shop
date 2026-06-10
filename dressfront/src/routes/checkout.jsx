@@ -25,9 +25,7 @@ function CheckoutPage() {
     0
   );
 
-  const handleOrder = (e) => {
-
-    e.preventDefault();
+  const handleOrder = (e) => { e.preventDefault();
 
     alert("Order placed successfully");
 

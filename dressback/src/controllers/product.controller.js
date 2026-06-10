@@ -12,13 +12,13 @@ const getProducts = async (req, res) => {
 const createProduct = async (req, res) => {
   try {
 
-    console.log(req.body);
-    const {
-      name,
-      description,
-      price,
-      image,
-    } = req.body;
+    // console.log(req.body);
+    // const {
+    //   name,
+    //   description,
+    //   price,
+    //   image,
+    // } = req.body;
 
     const product =
       await prisma.product.create({

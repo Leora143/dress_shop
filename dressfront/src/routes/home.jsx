@@ -11,12 +11,12 @@ function Home() {
       try {
        const data = await getProducts();
 
-console.log("PRODUCT DATA:", data);
-console.log("IS ARRAY:", Array.isArray(data));
-console.log(
-  "API URL:",
-  import.meta.env.VITE_API_URL
-);
+// console.log("PRODUCT DATA:", data);
+// console.log("IS ARRAY:", Array.isArray(data));
+// console.log(
+//   "API URL:",
+//   import.meta.env.VITE_API_URL
+// );
 
 setProducts(data);
       } catch (error) {

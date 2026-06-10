@@ -1,13 +1,8 @@
-const {
-  PutObjectCommand,
-} = require("@aws-sdk/client-s3");
+const { PutObjectCommand,} = require("@aws-sdk/client-s3");
 
 const s3 = require("../lib/s3");
 
-const uploadImage = async (
-  req,
-  res
-) => {
+const uploadImage = async (req,res) => {
 
   try {
 

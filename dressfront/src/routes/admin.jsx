@@ -49,9 +49,9 @@ function AdminPage() {
       image,
     });
   }else {
-    const uploadResult = await uploadImage(image);
-    const imageUrl = uploadResult.imageUrl;
-    console.log(uploadResult);
+    // const uploadResult = await uploadImage(image);
+    // const imageUrl = uploadResult.imageUrl;
+    // console.log(uploadResult);
 console.log(imageUrl);
     await createProduct({
       name,

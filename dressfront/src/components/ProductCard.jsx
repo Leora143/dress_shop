@@ -8,8 +8,7 @@ import { useNavigate } from "@tanstack/react-router";
 function ProductCard({ product }) {
   const navigate = useNavigate();
   const {setCart} = useContext(CartContext);
-  const { addToCart } =
-  useContext(CartContext);
+  const { addToCart } = useContext(CartContext);
   return (
     <div className="product-card">
       <Link 
@@ -29,16 +28,13 @@ function ProductCard({ product }) {
 
     <div className="productbuttons">
     <button
-  onClick={() =>
-    addToCart(product)
+  onClick={() => addToCart(product)
   }
 >
   Add To Cart
 </button>
    <button
-  onClick={() => {
-
-    setCart([product]);
+  onClick={() => { setCart([product]);
 
     navigate({
       to: "/checkout",

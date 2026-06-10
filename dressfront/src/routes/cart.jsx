@@ -10,8 +10,7 @@ function CartPage() {
 
   const navigate = Route.useNavigate();
 
-  const { cart } =
-    useContext(CartContext);
+  const { cart } = useContext(CartContext);
 
   const total = cart.reduce(
     (sum, item) =>
